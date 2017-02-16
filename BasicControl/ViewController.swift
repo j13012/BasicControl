@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         let scoreResult:[Int] = [75, 40, 45, 80, 90]
         var teamScore:Int = 0
         
-        //サンプル用基本制御
+        //計算処理
         for score in scoreResult{
             if score > 50{
                 teamScore += 3
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             }
         }
          
-        //結果表示用ラベル
+        //結果表示用ラベルの設定
         label.text = "チームの点数は" + String(teamScore)
         label.textAlignment = NSTextAlignment.center
         label.font = UIFont(name: "Meyrio", size: 20)
