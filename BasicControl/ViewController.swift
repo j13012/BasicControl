@@ -20,21 +20,21 @@ class ViewController: UIViewController {
         var teamScore:Int = 0
         
         //サンプル用基本制御
-         for score in scoreResult{
+        for score in scoreResult{
             if score > 50{
                 teamScore += 3
             }else{
                 teamScore += 1
             }
-         }
+        }
          
-         //結果表示用ラベル
-         label.text = "チームの点数は" + String(teamScore)
-         label.textAlignment = NSTextAlignment.center
+        //結果表示用ラベル
+        label.text = "チームの点数は" + String(teamScore)
+        label.textAlignment = NSTextAlignment.center
         label.font = UIFont(name: "Meyrio", size: 20)
 
-         //ビューに追加
-         self.view.addSubview(label)
+        //ビューに追加
+        self.view.addSubview(label)
     }
 
     override func didReceiveMemoryWarning() {
